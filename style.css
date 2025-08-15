@@ -1,0 +1,555 @@
+@import url(:https://fonts.googleapis.com/css?family=Poppins:wght@300;400:500;600;700:800;900&display=swap);
+
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #0b1623;            /* Deep navy background from image */
+    --secondary-bg-color: #101c2d;  /* Slightly lighter navy tone */
+    --text-color: #ffffff;          /* White text */
+    --main-color: #00e6ff;          /* Cyan glow highlight */
+}
+
+html {
+    font-size: 62.5%;
+    overflow: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--secondary-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+    cursor: default;
+}
+
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: .3s;
+}
+.navbar a:hover,
+.navbar a:active{
+    color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-content h3 {
+    font-size: 3.2rem;
+    font-weight: 700;  
+}
+
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.home-img img {
+    width: 25vw;   /* Scales with screen width */
+    height: auto;  /* Keeps proportions */
+    object-fit: cover; /* Optional: ensures cropping instead of stretching */
+}
+
+
+.home-content p {
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.home-content p {
+    margin-bottom: 2rem; /* Space between description and icons */
+}
+.social-media {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.social-media a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: 0.2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    transition: .5s ease;
+}
+
+.social-media a:hover {
+    background: var(--main-color);
+    color: var(--secondary-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+    transform: scale(1.1);
+}
+
+.home-content h3:nth-of-type {
+    margin-bottom: 2rem; /* Space between the title and the name */
+}
+
+span {
+    color: var(--main-color);
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border: 0.2rem solid var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--secondary-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+
+
+.about {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background: var(--secondary-bg-color);
+    overflow: hidden; /* Prevents background overflow */
+}
+
+.about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('E:/My Projects/Portfolio/AIabout.jpg') center/cover no-repeat;
+    opacity: 0.20; /* 60% visible */
+    z-index: 1;
+}
+
+.about-img img {
+    width: 35vw;   
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    z-index: 2; /* Above background */
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.about-content {
+    position: relative;
+    z-index: 2; /* Keep text above background */
+}
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+    font-size: 4rem;
+}
+
+.about-content h3 {
+    font-size: 2.6rem;
+}
+
+.about-content p {
+    font-size: 1.9rem;
+    margin: 2rem 0 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+
+.education {
+    padding: 10rem 9%;
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Container styling */
+.education-container {
+    display: flex;
+    gap: 5rem;
+    border-left: 3px solid var(--main-color);
+    border-right: 3px solid var(--main-color);
+    padding: 2rem;
+    position: relative;
+}
+
+/* Left and right columns */
+.education-left,
+.education-right {
+    flex: 1;
+    padding: 2rem;
+}
+
+/* Divider for left side */
+.education-left {
+    border-right: 2px solid var(--main-color);
+}
+
+/* Section titles */
+.education-left h2,
+.education-right h2 {
+    font-size: clamp(2rem, 3vw, 3rem);
+    color: var(--main-color);
+    margin-bottom: 2rem;
+}
+
+/* Items */
+.edu-item,
+.work-item {
+    margin-bottom: 2rem;
+}
+
+/* Item titles */
+.edu-item h3,
+.work-item h3 {
+    font-size: clamp(1.6rem, 2.5vw, 2rem);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+/* Paragraph text */
+
+.work-item ul,
+.work-item li {
+    font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+    line-height: 1;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.edu-item p {
+    font-size: clamp(2rem, 1.8vw, 1.6rem);
+    line-height: 1.6;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.work-item p {
+    font-size: clamp(2rem, 1.8vw, 1.6rem);
+    line-height: 1.6;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* Link styling */
+.edu-item h3 a,
+.work-item h3 a {
+    color: var(--main-color);
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.edu-item h3 a:hover,
+.work-item h3 a:hover {
+    color: #00ffea; /* Slightly brighter shade for hover */
+    text-decoration: underline;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .education-container {
+        flex-direction: column;
+        border: none;
+    }
+    .education-left {
+        border-right: none;
+        border-bottom: 2px solid var(--main-color);
+        padding-bottom: 2rem;
+    }
+}
+
+.bullet-justify {
+    text-align: justify;
+    padding-left: 1.5rem; /* space for bullet */
+    margin: 0;
+}
+
+.bullet-justify li {
+    margin-bottom: 0.8rem; /* spacing between points */
+}
+
+
+.technical-skills {
+    position: relative;
+    padding: 5rem 9%;
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;
+}
+
+.technical-skills::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('E:/My Projects/Portfolio/bgAI.jpg') center/cover no-repeat;
+    opacity: 0.5; /* 50% transparency */
+    z-index: 1;
+}
+
+.technical-skills h2,
+.technical-skills ul {
+    position: relative;
+    z-index: 2;
+        font-family: 'Times New Roman', Times, serif;
+
+}
+
+.technical-skills h2 {
+    font-size: clamp(2rem, 3vw, 3rem);
+    color: var(--main-color);
+    margin-bottom: 2rem;
+        font-family: 'Times New Roman', Times, serif;
+
+}
+
+.technical-skills ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+    text-align: justify;
+        font-family: 'Times New Roman', Times, serif;
+
+}
+
+.technical-skills li {
+    font-size: clamp(1.6rem, 1.8vw, 1.6rem);
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+        font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+
+.projects {
+    padding: 4rem 9%; /* reduced padding */
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.projects h2 {
+    font-size: clamp(1.6rem, 2.4vw, 2.4rem); /* 20% smaller */
+    color: var(--main-color);
+    margin-bottom: 2.4rem;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.project-item {
+    display: flex;
+    gap: 1.6rem; /* reduced gap */
+    margin-bottom: 3.2rem;
+    align-items: center;
+    flex-wrap: wrap; /* responsive */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.project-text {
+    flex: 1;
+}
+
+.project-text h3 a {
+    font-size: clamp(1.4rem, 2vw, 1.8rem); /* smaller heading */
+    color: var(--main-color);
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.project-text h3 a:hover {
+    color: #00ffea;
+    text-decoration: underline;
+}
+
+.project-text ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    text-align: justify;
+}
+
+.project-text li {
+    font-size: clamp(0.96rem, 1.44vw, 1.28rem); /* 20% smaller */
+    line-height: 1.5;
+    margin-bottom: 0.64rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.project-image {
+    flex: 1;
+    text-align: center;
+}
+
+.project-image img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px; /* slightly smaller corners */
+    border: 1.6px solid var(--main-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .project-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    .project-text ul {
+        text-align: left;
+    }
+}
+
+.achievements {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.achievements h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--main-color);
+    margin-bottom: 40px;
+}
+
+/* First 9 images in 3×3 grid (width +20%, gap +50%) */
+.achievement-list {
+    display: grid;
+    grid-template-columns: repeat(3, 5.4cm); /* 4.5cm → 5.4cm (20% bigger) */
+    grid-template-rows: repeat(3, 3cm);
+    gap: 15px; /* 10px → 15px (50% bigger) */
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.achievement-list img {
+    width: 5.4cm;  /* Increased by 20% */
+    height: 3cm;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement-list img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* Last 2 images (width +20%, gap +50%) */
+.remaining-images {
+    display: flex;
+    gap: 15px; /* 10px → 15px (50% bigger) */
+    justify-content: center;
+}
+
+.remaining-images img {
+    width: 3.6cm;   /* 3cm → 3.6cm (20% bigger) */
+    height: 4.5cm;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.remaining-images img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+
+.contact {
+    padding: 4rem 9%;
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: clamp(2rem, 3vw, 2.6rem);
+    color: var(--main-color);
+    margin-bottom: 2rem;
+}
+
+.contact-info {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    border: 1px solid var(--main-color);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-info p {
+    font-size: clamp(1.2rem, 1.8vw, 1.5rem);
+    margin: 0.8rem 0;
+}
+
+.contact-info a {
+    color: var(--main-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #00ffea;
+    text-decoration: underline;
+}
