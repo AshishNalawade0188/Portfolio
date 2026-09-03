@@ -4,304 +4,508 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashish Nalawade Portfolio</title>
-
-    <!-- Box Icons -->
+    <title>Ashish Nalawade | AI Engineer</title>
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
-
-    <!-- Custom CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header class="header">
-        <a href="#" class="logo">Portfolio</a>
-        <i class="bx bx-menu" id="menu-icon"></i> 
-        
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <a href="#home" class="logo">AN<span>.</span></a>
+        <nav class="navbar" id="navbar">
+            <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#education">Education</a>
-            <a href="#Technical Skills">Technical Skills</a>
+            <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#achievements">Achievements</a>
             <a href="#contact">Contact</a>
         </nav>
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span><span></span><span></span>
+        </div>
     </header>
 
-    <!-- Home Section -->
+    <!-- Mobile Nav Overlay -->
+    <div class="nav-overlay" id="nav-overlay"></div>
+
+    <!-- HOME -->
     <section class="home" id="home">
-    <div class="home-content">
-        <h3>Hello, It's Me</h3>
-        <h1>Ashish Nalawade</h1>
-        <h3>And I'm an <span>AI ENGINEER </span></h3><br>
-        <p>I'm an AI Engineer passionate about building intelligent systems, specializing in machine learning, deep learning, and data-driven solutions.</p>
-        
-        <div class="social-media">
-    <a href="https://www.facebook.com/ashish.nalawade.5682/" target="_blank">
-        <i class='bx bxl-facebook'></i>
-    </a>
-    <a href="https://x.com/Ashish_0188" target="_blank">
-        <i class='bx bxl-twitter'></i>
-    </a>
-    <a href="https://www.instagram.com/mr_ashish_0188?igsh=MWEwOW96YnFuMG80Zg==" target="_blank">
-        <i class='bx bxl-instagram-alt'></i>
-    </a>
-    <a href="https://www.linkedin.com/in/ashishnalawade0188?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
-        <i class='bx bxl-linkedin'></i>
-    </a>
-</div>
+        <div class="home-content">
+            <p class="greeting">Hello, It's Me</p>
+            <h1>Ashish <span>Nalawade</span></h1>
+            <h2 class="role">AI <span>Engineer</span></h2>
+            <p class="tagline">Building intelligent systems through Machine Learning, Deep Learning &amp; Generative AI — turning data into real-world impact.</p>
 
-        <br><br><br>
-        <!-- Download CV button -->
-        <a href="https://drive.google.com/file/d/1aPd2sG570XDgmGgmGmm_dc2mR3l16aNf/view?usp=sharing" 
-           class="btn" 
-           target="_blank">
-           Download CV
-        </a>
-    </div>
-        
-    <div class="home-img">
-        <!-- Use relative path or hosted image -->
-        <img src="image_no_bg.png" alt="">
-    </div>
-</section>
-
-
-
-
-    <!-- About Section design -->
-    <section class="about" id="about">
-            <div class="about-img">
-                <img src="image_no_bg.png" alt="">
+            <div class="social-media">
+                <a href="https://www.facebook.com/ashish.nalawade.5682/" target="_blank" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                <a href="https://x.com/Ashish_0188" target="_blank" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.instagram.com/mr_ashish_0188?igsh=MWEwOW96YnFuMG80Zg==" target="_blank" aria-label="Instagram"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://www.linkedin.com/in/ashishnalawade0188" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/AshishNalawade0188" target="_blank" aria-label="GitHub"><i class='bx bxl-github'></i></a>
             </div>
 
-            <div class="about-content">
-                <h2 class=""heading"> About <span>Me</span></h2>
-                <h3>AI ENGINEER</h3>
-               <p>
-I am a passionate AI Engineer with a strong foundation in Machine Learning, Deep Learning, and Natural Language Processing, specializing in designing and deploying intelligent systems that solve real-world problems. My expertise extends to Generative AI, Computer Vision, and Large Language Models, where I leverage cutting-edge frameworks and tools to create innovative, scalable, and high-performance solutions.  
+            <div class="home-btns">
+                <a href="https://drive.google.com/file/d/1aPd2sG570XDgmGgmGmm_dc2mR3l16aNf/view?usp=sharing" class="btn" target="_blank">Download CV</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+        </div>
 
-<br><br>As a Smart India Hackathon finalist, I have demonstrated the ability to engineer AI-driven applications that deliver measurable impact. I have hands-on experience in building production-grade AI solutions, from research and model development to deployment, optimization, and monitoring.  
-
-<br><br>Proficient in tools and technologies such as Python, PyTorch, TensorFlow, OpenAI API, LangChain, Hugging Face, Power BI, and SQL, I excel at creating end-to-end AI pipelines, integrating advanced analytics, and optimizing performance.  
-
-<br><br>Explore my work to see how I combine innovation, data-driven insights, and engineering excellence to build AI systems that transform ideas into reality.
-</p>
-            </div>  
+        <div class="home-img">
+            <div class="img-ring">
+                <img src="image_no_bg.png" alt="Ashish Nalawade">
+            </div>
+        </div>
     </section>
-<section class="education" id="education">
-    <div class="education-container">
-        
-        <!-- Left Column: Education -->
-        <div class="education-left">
-            <h2>Education</h2>
 
-            <div class="edu-item">
-                <h3>
-                    <a href="https://drive.google.com/file/d/1UL__Fs5DPpufbjqLsje5y3oElzJW4XYa/view?usp=drive_link" target="_blank">
-                        B.E. (AI & DS Engineering) | CGPA - 8.76
-                    </a>
-                </h3>
-                <p>Savitribai Phule Pune University, Pune, India</p>
-                <p>2021 – 2025</p>
-            </div>
-
-            <div class="edu-item">
-                <h3>
-                    <a href="https://drive.google.com/file/d/1eeX9Y8DUQxKwlZzveKVTkMFCStm_YYc4/view?usp=drive_link" target="_blank">
-                        Higher Secondary Board | Grade - 92.67%
-                    </a>
-                </h3>
-                <p>Annasaheb Waghire College, Otur, Pune, India</p>
-                <p>2019 – 2021</p>
-            </div>
-
-            <div class="edu-item">
-                <h3>
-                    <a href="https://drive.google.com/file/d/1ea4iGQbHsTsXivNoC_zFN72gjx4OBJMH/view?usp=drive_link" target="_blank">
-                        Secondary School Certificate | Grade - 88.60%
-                    </a>
-                </h3>
-                <p>Shivneri Vidyalaya, Dholwad, Pune, India</p>
-                <p>2018 – 2019</p>
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="image_no_bg.png" alt="Ashish Nalawade">
+        </div>
+        <div class="about-content">
+            <p class="section-label">Who I Am</p>
+            <h2>About <span>Me</span></h2>
+            <h3>AI Engineer &amp; Data Scientist</h3>
+            <p>
+                I am a passionate AI Engineer with a strong foundation in Machine Learning, Deep Learning, and Natural Language Processing, specializing in designing and deploying intelligent systems that solve real-world problems. My expertise spans Generative AI, Computer Vision, and Large Language Models.
+            </p>
+            <p>
+                As a Smart India Hackathon 2024 Finalist, I have demonstrated the ability to engineer AI-driven applications that deliver measurable impact — from research and model development through to deployment, optimization, and monitoring.
+            </p>
+            <p>
+                Proficient in Python, PyTorch, TensorFlow, OpenAI API, LangChain, Hugging Face, Power BI, and SQL, I build end-to-end AI pipelines that transform ideas into reality.
+            </p>
+            <div class="about-stats">
+                <div class="stat"><span>3+</span><p>Internships</p></div>
+                <div class="stat"><span>5+</span><p>Projects</p></div>
+                <div class="stat"><span>2</span><p>Publications</p></div>
+                <div class="stat"><span>SIH</span><p>Finalist 2024</p></div>
             </div>
         </div>
+    </section>
 
-        <!-- Right Column: Internships & Work Experience -->
-        <div class="education-right">
-            <h2>Internships & Work Experience</h2>
+    <!-- EDUCATION -->
+    <section class="education" id="education">
+        <p class="section-label center">My Journey</p>
+        <h2 class="section-title">Education &amp; <span>Experience</span></h2>
 
-            <div class="work-item">
-                <h3>
-                    <a href="https://drive.google.com/file/d/19NSNeTgAMPaPBg50Yp_1myNXx7SR5XMz/view?usp=drive_link" target="_blank">
-                        AI & ML Intern
-                    </a>
-                </h3>
-                <p>Smart Eye | April 2025 - June 2025</p>
-                <ul class="bullet-justify">
-                    <li>Innovated CNN models to detect obstacles, currency, and stairs in real-time, aiding visually impaired navigation.</li>
-                    <li>Implemented Computer Vision solutions using TensorFlow, PyTorch, and OpenCV on Raspberry Pi with IMX500.</li>
-                    <li>Designed an AI-powered smart stick with sensors, vibration, and audio feedback to enhance obstacle detection.</li>
-                </ul>
+        <div class="edu-grid">
+
+            <!-- LEFT: Education -->
+            <div class="edu-col">
+                <h3 class="col-title"><i class='bx bxs-graduation'></i> Education</h3>
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">Feb 2026 (Ongoing)</span>
+                            <h4><a href="#" target="_blank">PGCP-BDA — C-DAC, Pune</a></h4>
+                            <p>Post Graduate Certificate Programme in Big Data Analytics</p>
+                            <p class="grade">Score: 78% &nbsp;|&nbsp; CCPP ID: PB0146</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2021 – 2025</span>
+                            <h4><a href="https://drive.google.com/file/d/1UL__Fs5DPpufbjqLsje5y3oElzJW4XYa/view?usp=drive_link" target="_blank">B.E. — AI &amp; Data Science</a></h4>
+                            <p>Savitribai Phule Pune University, Pune</p>
+                            <p class="grade">CGPA: 8.76 &nbsp;|&nbsp; 80.12%</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2019 – 2021</span>
+                            <h4><a href="https://drive.google.com/file/d/1eeX9Y8DUQxKwlZzveKVTkMFCStm_YYc4/view?usp=drive_link" target="_blank">HSC — Science</a></h4>
+                            <p>Annasaheb Waghire College, Otur, Pune</p>
+                            <p class="grade">92.66%</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2018 – 2019</span>
+                            <h4><a href="https://drive.google.com/file/d/1ea4iGQbHsTsXivNoC_zFN72gjx4OBJMH/view?usp=drive_link" target="_blank">SSC</a></h4>
+                            <p>Shivneri Vidyalaya, Dholwad, Pune</p>
+                            <p class="grade">88.60%</p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
-            <div class="work-item">
-                <h3>
-                    <a href="https://drive.google.com/file/d/1WAjl7W6IgpEwlgpu-Hmx_x3Apahci5hC/view?usp=drive_link" target="_blank">
-                        Data Science & Machine Learning Intern
-                    </a>
-                </h3>
-                <p>AIvariant | July 2024 - Jan 2025</p>
-                <ul class="bullet-justify">
-                    <li>Engineered and deployed an automated reporting system using Python and SQL, improving KPI tracking accuracy and reducing deployment errors by 30%, enhancing business intelligence by 35%.</li>
-                    <li>Optimized data preprocessing workflows, cutting data cleaning time by 50% through efficient pipeline automation and scalable SQL queries.</li>
-                    <li>Conducted comprehensive EDA using Pandas and Matplotlib to reveal customer behavior patterns, contributing to a 40% increase in actionable insights for business teams.</li>
-                </ul>
+            <!-- RIGHT: Work Experience -->
+            <div class="edu-col">
+                <h3 class="col-title"><i class='bx bxs-briefcase'></i> Work Experience</h3>
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot accent2"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">Apr 2025 – Jun 2025</span>
+                            <h4><a href="https://drive.google.com/file/d/19NSNeTgAMPaPBg50Yp_1myNXx7SR5XMz/view?usp=drive_link" target="_blank">AI &amp; ML Intern — Smart Eye</a></h4>
+                            <ul>
+                                <li>Innovated CNN models to detect obstacles, currency, and stairs in real-time for visually impaired navigation.</li>
+                                <li>Implemented Computer Vision solutions using TensorFlow, PyTorch, and OpenCV on Raspberry Pi with IMX500.</li>
+                                <li>Designed an AI-powered smart stick with sensors, vibration, and audio feedback.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot accent2"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">Jul 2024 – Jan 2025</span>
+                            <h4><a href="https://drive.google.com/file/d/1WAjl7W6IgpEwlgpu-Hmx_x3Apahci5hC/view?usp=drive_link" target="_blank">Data Science &amp; ML Intern — AIvariant</a></h4>
+                            <ul>
+                                <li>Engineered an automated reporting system with Python and SQL — reduced deployment errors by 30%, boosted BI by 35%.</li>
+                                <li>Optimized data preprocessing, cutting data cleaning time by 50% through pipeline automation.</li>
+                                <li>Conducted EDA revealing customer behavior patterns, increasing actionable insights by 40%.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot accent2"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">May 2024 – Sep 2024</span>
+                            <h4><a href="https://drive.google.com/file/d/1Uk5ZatILKN4UVCnyotltdki24C8dJyfF/view?usp=drive_link" target="_blank">Data Analyst Intern — AIvariant</a></h4>
+                            <ul>
+                                <li>Built and automated Power BI &amp; Tableau dashboards, increasing report accessibility by 60%.</li>
+                                <li>Processed large datasets with SQL and Python, improving query efficiency by 45%.</li>
+                                <li>Reduced data interpretation time by 50% through interactive visualizations.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
-            <div class="work-item">
-                <h3>
-                    <a href="https://drive.google.com/file/d/1Uk5ZatILKN4UVCnyotltdki24C8dJyfF/view?usp=drive_link" target="_blank">
-                        Data Analyst Intern
-                    </a>
-                </h3>
-                <p>AIvariant | May 2024 - Sept 2024</p>
-                <ul class="bullet-justify">
-                    <li>Built and automated dashboards using Excel, Power BI, and Tableau for key business metrics, increasing report accessibility by 60%.</li>
-                    <li>Processed and analyzed large datasets using SQL and Python, improving query efficiency by 45%.</li>
-                    <li>Established interactive visualizations, reducing data interpretation time by 50%.</li>
-                </ul>
+        </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS -->
+    <section class="skills" id="skills">
+        <p class="section-label center">What I Work With</p>
+        <h2 class="section-title">Technical <span>Skills</span></h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <div class="skill-icon"><i class='bx bxl-python'></i></div>
+                <h4>Languages</h4>
+                <p>Python, SQL, R, Java</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><i class='bx bx-brain'></i></div>
+                <h4>ML &amp; AI Frameworks</h4>
+                <p>Scikit-learn, TensorFlow, Keras, PyTorch</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><i class='bx bx-data'></i></div>
+                <h4>Data Handling</h4>
+                <p>Pandas, NumPy, EDA, Feature Engineering</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><i class='bx bx-message-square-dots'></i></div>
+                <h4>NLP &amp; Computer Vision</h4>
+                <p>NLTK, spaCy, Transformers, OpenCV, YOLO</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><i class='bx bx-bot'></i></div>
+                <h4>Generative &amp; Agentic AI</h4>
+                <p>LangChain, LLaMA, OpenAI API, Gemini, Hugging Face, CrewAI, AutoGPT</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><i class='bx bx-edit'></i></div>
+                <h4>Prompt Engineering</h4>
+                <p>Few-shot, Chain-of-Thought, RAG, Prompt Tuning</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><i class='bx bx-bar-chart-alt-2'></i></div>
+                <h4>Visualization</h4>
+                <p>Matplotlib, Seaborn, Power BI, Tableau</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><i class='bx bx-server'></i></div>
+                <h4>Deployment</h4>
+                <p>Flask, FastAPI, Streamlit</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><i class='bx bx-cloud'></i></div>
+                <h4>Cloud &amp; DevOps</h4>
+                <p>AWS, GCP, Git, GitHub, CI/CD</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><i class='bx bx-table'></i></div>
+                <h4>Databases</h4>
+                <p>MySQL, PostgreSQL, MongoDB, SQLite, HDFS</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><i class='bx bx-network-chart'></i></div>
+                <h4>Big Data</h4>
+                <p>Apache Kafka, Spark, Airflow, HDFS</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><i class='bx bx-code-alt'></i></div>
+                <h4>Tools</h4>
+                <p>Jupyter, VS Code, Anaconda, Google Colab, Raspberry Pi</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+        <p class="section-label center">What I've Built</p>
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+
+        <div class="projects-grid">
+
+            <!-- Project 1: Restaurant Analytics -->
+            <div class="project-card featured">
+                <div class="project-badge">Featured</div>
+                <div class="project-top">
+                    <div class="project-number">01</div>
+                    <div class="project-links">
+                        <a href="https://github.com/AshishNalawade0188/Restaurant-Analytics-Predictive-Intelligence-System" target="_blank" title="GitHub"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+                <h3>Restaurant Analytics &amp; Predictive Intelligence System</h3>
+                <p>Engineered an end-to-end ML and GenAI pipeline on a large-scale food-tech dataset to transform fragmented market data into actionable business intelligence. Built dual-track Scikit-Learn ensemble workflows (Random Forest, Gradient Boosting, Stacking) for rating forecasting and market segmentation. Embedded an interactive RAG-backed LLM chatbot enabling natural language queries over complex operational analytics.</p>
+                <div class="tech-tags">
+                    <span>Python</span><span>Scikit-Learn</span><span>LangChain</span><span>NLTK</span><span>RAG</span><span>LLMs</span><span>GenAI</span><span>Ensemble ML</span>
+                </div>
+            </div>
+
+            <!-- Project 2: Postal Tracking -->
+            <div class="project-card">
+                <div class="project-top">
+                    <div class="project-number">02</div>
+                    <div class="project-links">
+                        <a href="https://drive.google.com/file/d/1HlTHQGYZZ-T2hSl9WwSyTb6h4ovYLmO8/view?usp=drive_link" target="_blank" title="View"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <h3>AI-Powered Postal Tracking System</h3>
+                <p>Deployed an AI-powered postal tracking system that improved service efficiency by 30%. Integrated live analytics for crowd management and service time tracking with an intuitive dashboard. Selected as a <strong>Top 5 Finalist in Smart India Hackathon 2024.</strong></p>
+                <div class="tech-tags">
+                    <span>OpenCV</span><span>Flask</span><span>Python</span><span>Computer Vision</span>
+                </div>
+            </div>
+
+            <!-- Project 3: Traffic Surveillance -->
+            <div class="project-card">
+                <div class="project-top">
+                    <div class="project-number">03</div>
+                    <div class="project-links">
+                        <a href="https://github.com/AshishNalawade0188/Helmet_and_Number_Plate" target="_blank" title="GitHub"><i class='bx bxl-github'></i></a>
+                        <a href="https://drive.google.com/file/d/1rQRt6T1LgGshZDvo99u1XmBq-PpYiphR/view?usp=drive_link" target="_blank" title="View"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <h3>AI Smart Traffic Surveillance System</h3>
+                <p>Upgraded an AI-powered surveillance system for automatic helmet and number plate detection using YOLO and CNNs. Integrated real-time video processing and OCR for LPR. Developed a real-time monitoring dashboard for automated penalty enforcement.</p>
+                <div class="tech-tags">
+                    <span>YOLOv8</span><span>OpenCV</span><span>Python</span><span>Flask</span><span>Twilio API</span><span>EasyOCR</span>
+                </div>
+            </div>
+
+            <!-- Project 4: Resume Classification -->
+            <div class="project-card">
+                <div class="project-top">
+                    <div class="project-number">04</div>
+                    <div class="project-links">
+                        <a href="https://github.com/AshishNalawade0188/Resume_Classification" target="_blank" title="GitHub"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+                <h3>AI-Based Resume Classification System</h3>
+                <p>Machine learning system to automatically classify resumes into job-specific categories. Applied NLP preprocessing (tokenization, TF-IDF) and trained multiple models including optimized Logistic Regression and Random Forest. Deployed as a Streamlit web app for real-time classification.</p>
+                <div class="tech-tags">
+                    <span>Python</span><span>Scikit-learn</span><span>NLP</span><span>TF-IDF</span><span>Streamlit</span>
+                </div>
+            </div>
+
+            <!-- Project 5: Jobs Trends -->
+            <div class="project-card">
+                <div class="project-top">
+                    <div class="project-number">05</div>
+                    <div class="project-links">
+                        <a href="https://github.com/AshishNalawade0188/Jobs_Trend_Analysis" target="_blank" title="GitHub"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+                <h3>Jobs Trends Analysis — Big Data Pipeline</h3>
+                <p>Built a scalable dual-layer architecture ingesting 10,000+ events/sec via Apache Kafka alongside HDFS distributed storage. Distributed ETL with Spark reduced KPI processing by 60%. Airflow automates 100% of DAG orchestration; Tableau dashboards deliver real-time recruitment and salary insights across 50+ regions.</p>
+                <div class="tech-tags">
+                    <span>Kafka</span><span>Spark</span><span>HDFS</span><span>Airflow</span><span>Tableau</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="achievements" id="achievements">
+        <p class="section-label center">Recognition</p>
+        <h2 class="section-title">Achievements &amp; <span>Certifications</span></h2>
+
+        <div class="achievements-list">
+            <div class="achievement-item">
+                <i class='bx bx-trophy'></i>
+                <div>
+                    <h4>Smart India Hackathon 2024 Finalist</h4>
+                    <p>Top 5 nationwide for AI-Powered Postal Tracking System</p>
+                </div>
+            </div>
+            <div class="achievement-item">
+                <i class='bx bx-file'></i>
+                <div>
+                    <h4>Research Publication — IJARCT</h4>
+                    <p>"AI-powered Traffic Enforcement" — UGC-CARE-approved journal</p>
+                </div>
+            </div>
+            <div class="achievement-item">
+                <i class='bx bx-file'></i>
+                <div>
+                    <h4>Research Publication — JCON</h4>
+                    <p>Published research in international conference proceedings</p>
+                </div>
+            </div>
+            <div class="achievement-item">
+                <i class='bx bx-star'></i>
+                <div>
+                    <h4>Aviskar 2024 — State-Level Poster Presentation</h4>
+                    <p>Selected for state-level AI and data science innovation showcase</p>
+                </div>
+            </div>
+            <div class="achievement-item">
+                <i class='bx bx-podcast'></i>
+                <div>
+                    <h4>GMRT Science Day Exhibition</h4>
+                    <p>Presented AI and data science innovations at the Giant Metrewave Radio Telescope</p>
+                </div>
+            </div>
+            <div class="achievement-item">
+                <i class='bx bx-badge-check'></i>
+                <div>
+                    <h4>AWS Certification</h4>
+                    <p>Amazon Web Services — Cloud fundamentals</p>
+                </div>
+            </div>
+            <div class="achievement-item">
+                <i class='bx bx-badge-check'></i>
+                <div>
+                    <h4>Data Analytics Certification</h4>
+                    <p>Professional certification in data analytics</p>
+                </div>
+            </div>
+            <div class="achievement-item">
+                <i class='bx bx-badge-check'></i>
+                <div>
+                    <h4>Data Science Certification</h4>
+                    <p>Professional certification in data science</p>
+                </div>
+            </div>
+            <div class="achievement-item">
+                <i class='bx bx-badge-check'></i>
+                <div>
+                    <h4>Robotics Process Automation</h4>
+                    <p>RPA certification by Proazure Software Solutions</p>
+                </div>
+            </div>
+            <div class="achievement-item">
+                <i class='bx bx-badge-check'></i>
+                <div>
+                    <h4>MERN Full Stack Development</h4>
+                    <p>Full stack web development certification</p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
 
-<br>
-<br>
-    <!-- Technical Skills Section -->
-     <!-- Technical Skills Section -->
-<section class="technical-skills" id="Technical Skills">
-    <br><br><br><br><br><br><br><br><br><br>
-    <h2>Technical Skills</h2>
-    <ul>
-        <li><strong>Languages:</strong> Python, SQL, R</li>
-        <li><strong>ML & AI Frameworks:</strong> Scikit-learn, TensorFlow, Keras, PyTorch</li>
-        <li><strong>Data Handling & Analysis:</strong> Pandas, NumPy, EDA, Feature Engineering</li>
-        <li><strong>NLP & CV:</strong> NLTK, spaCy, Transformers, OpenCV, YOLO</li>
-        <li><strong>Generative AI & Agentic AI:</strong> LangChain, LLaMA, OpenAI API, Gemini, Hugging Face, AutoGPT, CrewAI</li>
-        <li><strong>Prompt Engineering:</strong> Few-shot, Chain-of-Thought, RAG (Retrieval-Augmented Generation), Prompt Tuning</li>
-        <li><strong>Visualization:</strong> Matplotlib, Seaborn, Power BI, Tableau</li>
-        <li><strong>Model Deployment:</strong> Flask, FastAPI, Streamlit</li>
-        <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB, SQLite</li>
-        <li><strong>Cloud & DevOps:</strong> AWS, GCP, Git, GitHub, CI/CD</li>
-        <li><strong>Tools:</strong> Jupyter Notebook, VS Code, Anaconda, Google Colab</li>
-    </ul>
-</section>
-
-<section class="projects" id="projects">
-    <br><br><br><br><br>
-    <h2>Projects</h2>
-
-    <!-- Project 1 -->
-    <div class="project-item">
-        <div class="project-text">
-            <h3><a href="https://drive.google.com/file/d/1HlTHQGYZZ-T2hSl9WwSyTb6h4ovYLmO8/view?usp=drive_link" target="_blank">AI-Powered Postal Tracking System</a></h3>
-            <ul>
-                <li>Improved service efficiency by 30% by deploying an AI-powered postal tracking system built with OpenCV and Flask.</li>
-                <li>Integrated live analytics for crowd management and service time tracking.</li>
-                <li>Constructed an intuitive dashboard to provide actionable insights for efficiency improvement.</li>
-                <li>Selected as a Top 5 Finalist in the Smart India Hackathon 2024.</li>
-            </ul>
+        <!-- Certificate Image Gallery -->
+        <div class="cert-gallery">
+            <img src="SihC.png" alt="Smart India Hackathon 2024">
+            <img src="JMRT.jpg" alt="GMRT Science Day">
+            <img src="ECELL.png" alt="Tech Summit">
+            <img src="Infosys.jpg" alt="Innovation Fest Infosys">
+            <img src="IJARCT.png" alt="IJARCT Published Paper">
+            <img src="JCON.jpg" alt="JCON Published Paper">
+            <img src="RPA.png" alt="Robotics Process Automation">
+            <img src="AWS.png" alt="Amazon Web Services">
+            <img src="TCR.png" alt="MERN Full Stack">
+            <img src="DS.png" alt="Data Science Certification">
+            <img src="DA.png" alt="Data Analytics Certification">
         </div>
-        <div class="project-image">
-            <img src="Post.png" alt="AI Postal Tracking System">
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <p class="section-label center">Get In Touch</p>
+        <h2 class="section-title">Let's <span>Connect</span></h2>
+        <p class="contact-intro">Open to opportunities, collaborations, and interesting AI conversations.</p>
+
+        <div class="contact-grid">
+            <a href="tel:+919130320188" class="contact-card">
+                <i class='bx bx-phone'></i>
+                <div>
+                    <span>Phone</span>
+                    <p>+91 9130320188</p>
+                </div>
+            </a>
+            <a href="mailto:ashishnalawade683@gmail.com" class="contact-card">
+                <i class='bx bx-envelope'></i>
+                <div>
+                    <span>Email</span>
+                    <p>ashishnalawade683@gmail.com</p>
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/in/ashishnalawade0188" target="_blank" class="contact-card">
+                <i class='bx bxl-linkedin'></i>
+                <div>
+                    <span>LinkedIn</span>
+                    <p>ashishnalawade0188</p>
+                </div>
+            </a>
+            <a href="https://github.com/AshishNalawade0188" target="_blank" class="contact-card">
+                <i class='bx bxl-github'></i>
+                <div>
+                    <span>GitHub</span>
+                    <p>AshishNalawade0188</p>
+                </div>
+            </a>
+            <a href="https://leetcode.com/u/Ashish_Nalawade/" target="_blank" class="contact-card">
+                <i class='bx bx-code-curly'></i>
+                <div>
+                    <span>LeetCode</span>
+                    <p>Ashish_Nalawade</p>
+                </div>
+            </a>
         </div>
-    </div>
+    </section>
 
-    <!-- Project 2 -->
-    <div class="project-item">
-        <div class="project-text">
-            <h3><a href="https://drive.google.com/file/d/1rQRt6T1LgGshZDvo99u1XmBq-PpYiphR/view?usp=drive_link" target="_blank">AI-Powered Smart Traffic Surveillance System</a></h3>
-            <ul>
-                <li>Tech Stack: YOLOv8, OpenCV, Python, Flask, Twilio API</li>
-                <li>Upgraded an AI-powered surveillance system for automatic helmet and number plate detection.</li>
-                <li>Integrated real-time video processing to identify traffic violations, such as riding without wearing a helmet.</li>
-                <li>Developed a real-time monitoring dashboard for authorities overseeing traffic violations and automatically enforcing penalties.</li>
-            </ul>
-        </div>
-        <div class="project-image">
-            <img src="Traffic.jpeg" alt="AI Traffic Surveillance System">
-        </div>
-    </div>
+    <footer class="footer">
+        <p>Designed &amp; Built by <span>Ashish Nalawade</span> &copy; 2025</p>
+    </footer>
 
-    <!-- Project 3 -->
-    <div class="project-item">
-        <div class="project-text">
-            <h3><a href="https://github.com/AshishNalawade0188/Resume_Classification" target="_blank">AI-Based Resume Classification System</a></h3>
-            <ul>
-                <li>Introduced a machine learning system to automatically classify resumes into job-specific categories (e.g., Data Science, Web Development, HR).</li>
-                <li>Performed NLP-based text preprocessing, including tokenization, stopword removal, stemming, and vectorization using TF-IDF.</li>
-                <li>Trained and evaluated multiple classification models; optimized Logistic Regression and Random Forest for best accuracy.</li>
-                <li>Deployed a Streamlit web app for real-time resume upload and classification with an interactive UI.</li>
-            </ul>
-        </div>
-        <div class="project-image">
-            <img src="airesume.png" alt="AI Resume Classification System">
-        </div>
-    </div>
-</section>
-
-<section class="achievements" id="achievements">
-    <br><br><br><br><br>
-    <h2>Achievements</h2>
-
-    <!-- First 9 images in 3×3 matrix -->
-    <div class="achievement-list">
-        <img src="SihC.png" alt="Smart India Hackathon 2024">
-        <img src="JMRT.jpg" alt="GMRT Science Day">
-        <img src="ECELL.png" alt="Tech Summit">
-        <img src="Infosys.jpg" alt="Innovation Fest Infosys">
-        <img src="IJARCT.png" alt="IJARCT Published Paper">
-        <img src="JCON.jpg" alt="JCON Published Paper">
-        <img src="RPA.png" alt="Robotics Process Automation Certification">
-        <img src="AWS.png" alt="Amazon Web Services Certification">
-        <img src="TCR.png" alt="Mern Full Stack Development Certification">
-    </div>
-
-    <!-- Last 2 images side-by-side -->
-    <div class="remaining-images">
-        <img src="DS.png" alt="Data Science Certification">
-        <img src="DA.png" alt="Data Analytics Certification">
-    </div>
-</section>
-
-
-
-
-
-<section class="contact" id="contact">
-
-    <br><br><br> <br><br><br>  <br><br><br> <br><br><br>  <br><br><br> <br><br><br>
-    <h2>📞 Contact</h2>
-    <div class="contact-info">
-        <p>📱 <strong>Phone:</strong> <a href="tel:+919130320188">+91 9130320188</a></p>
-        <p>📧 <strong>Email:</strong> <a href="mailto:ashishnalawade683@gmail.com">ashishnalawade683@gmail.com</a></p>
-        <p>💼 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ashishnalawade0188" target="_blank">linkedin.com</a></p>
-        <p>🐙 <strong>GitHub:</strong> <a href="https://github.com/AshishNalawade0188" target="_blank">github.com</a></p>
-        <p>🧩 <strong>LeetCode:</strong> <a href="https://leetcode.com/u/Ashish_Nalawade/" target="_blank">leetcode.com</a></p>
-    </div>
-</section>
-
-
-
-      
-    <!-- Custom JS -->
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
